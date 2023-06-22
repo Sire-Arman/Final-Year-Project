@@ -48,8 +48,8 @@ const Page = () => {
       </div>
 
       {!isLoading && responseData.length === 0 && (
-        <div className="flex justify-center items-center">
-          <Image src="/news.png" width={500} height={500} alt="News" />
+        <div className="flex justify-center items-center m-4 image-container">
+          <Image src="/review.png" width={400} height={400} alt="News" />
         </div>
       )}
 
@@ -64,10 +64,13 @@ const Page = () => {
               type="text"
               value={asin}
               onChange={(e) => setASIN(e.target.value)}
-              className="border border-gray-300 w-64 mx-10 p-2"
+              className="border border-gray-300 w-64 mx-10 py-4 px-6 rounded-[10px]"
             />
           </label>
-          <button type="submit" className="border bg-sky-900 text-white p-2">
+          <button
+            type="submit"
+            className="py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none "
+          >
             Submit
           </button>
         </form>

@@ -102,7 +102,7 @@ def reviews():
         driver = webdriver.Chrome(service=selenium_service)
 
         # Website link and ASIN value
-        base_url = "https://www.amazon.com"
+        base_url = "https://www.amazon.in"
         review_page_url = f"{base_url}/product-reviews/{asin}"
 
         # Open the review page in the browser

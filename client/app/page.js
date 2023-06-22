@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className=" w-full overflow-hidden bg-primary">
+    <div className=" w-full overflow-hidden bg-primary h-full">
       <div className="flex flex-wrap justify-center items-center">
         <div className="w-1/2 p-4">
           {/* Left section */}
@@ -20,8 +20,8 @@ export default function Home() {
           <Image src="/robot.png" width={400} height={400} className="z-[5 ]" />
           {/* gradient start */}
           <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-          <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
-          <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
+          <div className="absolute z-[1] w-[90%] h-[80%] rounded-full white__gradient bottom-40" />
+          <div className="absolute z-[0] w-[50%] h-[50%] right-64 bottom-12 blue__gradient" />
           {/* gradient end */}
         </div>
       </div>

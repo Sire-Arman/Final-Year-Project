@@ -47,12 +47,12 @@ const NewsResults = () => {
 
   return (
     <div>
-      <div className="flex justify-center items-center text-4xl font-bold m-8">
-        Sentiment analysis on News Articles
+      <div className="flex justify-center items-center text-4xl font-bold mt-8 m-4">
+        Sentiment Analysis on News Articles
       </div>
       {!isLoading && responseData.length === 0 && (
-        <div className="flex justify-center items-center">
-          <Image src="/news.png" width={500} height={500} alt="News" />
+        <div className="flex justify-center items-center image-container">
+          <Image src="/newsRobot.png" width={500} height={500} alt="News" />
         </div>
       )}
       <form
@@ -64,9 +64,12 @@ const NewsResults = () => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Enter your search term"
-          className="border border-gray-300  w-64 mx-10 p-2"
+          className="border border-gray-300  w-72 mx-10 p-4 rounded-[10px]"
         />
-        <button type="submit" className="border bg-sky-900 text-white p-2">
+        <button
+          type="submit"
+          className="py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none "
+        >
           Search
         </button>
       </form>

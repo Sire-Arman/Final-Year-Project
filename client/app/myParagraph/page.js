@@ -76,8 +76,8 @@ function Page() {
         Enter any text here
       </div>
       {!isLoading && Object.keys(responseData).length === 0 && (
-        <div className="flex justify-center items-center">
-          <Image src="/news.png" width={500} height={500} alt="News" />
+        <div className="flex justify-center items-center m-8 image-container">
+          <Image src="/paragraph.png" width={400} height={400} alt="News" />
         </div>
       )}
       <form
@@ -88,11 +88,11 @@ function Page() {
           type="text"
           value={inputText}
           onChange={handleInputChange}
-          placeholder="Enter your search term"
-          className="border border-gray-300 w-64 mx-10 p-2"
+          placeholder="Enter any text here"
+          className="border border-gray-300 w-64 mx-4 py-4 px-6 rounded-[10px] w-96"
         />
         <div>
-          <label>
+          <label className="m-2">
             <input
               type="checkbox"
               name="vader"
@@ -101,7 +101,7 @@ function Page() {
             />
             Vader
           </label>
-          <label>
+          <label className="m-2">
             <input
               type="checkbox"
               name="textBlob"
@@ -110,17 +110,11 @@ function Page() {
             />
             TextBlob
           </label>
-          <label>
-            <input
-              type="checkbox"
-              name="advanced"
-              checked={advancedChecked}
-              onChange={handleCheckboxChange}
-            />
-            Advanced
-          </label>
         </div>
-        <button type="submit" className="border bg-sky-900 text-white p-2">
+        <button
+          type="submit"
+          className=" mx-2 py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none "
+        >
           Analyze
         </button>
       </form>
@@ -129,9 +123,6 @@ function Page() {
       )}
       {textBlobChecked && Object.keys(responseData).length > 0 && (
         <TextBlob data={responseData} />
-      )}
-      {advancedChecked && Object.keys(responseData).length > 0 && (
-        <Advanced data={responseData} />
       )}
     </div>
   );
