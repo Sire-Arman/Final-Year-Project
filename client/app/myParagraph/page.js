@@ -72,7 +72,7 @@ function Page() {
 
   return (
     <div>
-      <div className="flex justify-center items-center text-4xl font-bold m-8">
+      <div className="flex justify-center items-center text-4xl font-bold m-8 font-poppins">
         Enter any text here
       </div>
       {!isLoading && Object.keys(responseData).length === 0 && (

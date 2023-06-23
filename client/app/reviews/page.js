@@ -43,7 +43,7 @@ const Page = () => {
 
   return (
     <div className="overflow-hidden">
-      <div className="flex justify-center items-center text-4xl font-bold m-8">
+      <div className="flex justify-center items-center text-4xl font-bold m-8 font-poppins">
         Sentiment Analysis on Amazon Reviews
       </div>
 
@@ -78,7 +78,18 @@ const Page = () => {
         {/* Results */}
         <div>
           {isLoading ? (
-            <p>Loading...</p>
+            <div className="flex justify-center items-center m-64">
+              <div className="flex flex-col items-center">
+                <img
+                  src="/loadingLogo.png"
+                  width={100}
+                  height={100}
+                  alt="News"
+                  className="animate-spin"
+                />
+                <p>Loading...</p>
+              </div>
+            </div>
           ) : (
             <div>
               {responseData.length > 0 && (

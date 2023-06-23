@@ -47,7 +47,7 @@ const NewsResults = () => {
 
   return (
     <div>
-      <div className="flex justify-center items-center text-4xl font-bold mt-8 m-4">
+      <div className="flex justify-center items-center text-4xl font-bold mt-8 m-4 font-poppins">
         Sentiment Analysis on News Articles
       </div>
       {!isLoading && responseData.length === 0 && (
@@ -76,7 +76,18 @@ const NewsResults = () => {
       {/* Results */}
       <div>
         {isLoading ? (
-          <p>Loading...</p>
+          <div className="flex justify-center items-center m-64">
+            <div className="flex flex-col items-center">
+              <img
+                src="/loadingLogo.png"
+                width={100}
+                height={100}
+                alt="News"
+                className="animate-spin"
+              />
+              <p>Loading...</p>
+            </div>
+          </div>
         ) : (
           <div>
             {responseData.length > 0 && (
