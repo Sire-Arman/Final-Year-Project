@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className=" w-full overflow-hidden bg-primary h-full">
+    <div className=" w-full overflow-hidden bg-primary h-screen">
       <div className="flex flex-wrap justify-center items-center">
         <div className="w-1/2 p-4">
           {/* Left section */}
