@@ -1,16 +1,31 @@
+# Sentiment Analysis Dashboard
 
-News Sentiment Analysis App
-Overview
-This Flask app fetches news articles mentioning a given name, analyzes the sentiment of relevant passages, and presents the results to users. It utilizes web scraping with BeautifulSoup for extracting passages, sentiment analysis with the VADER NLP model, and incorporates machine learning techniques like part-of-speech tagging and named entity recognition.
+---
 
-Features
-Name-based News Retrieval: Users can input a name, and the app fetches relevant news articles mentioning that name.
+**Overview:**
+The Sentiment Analysis Dashboard is a web application that allows users to analyze the sentiment of news articles and product reviews. The application combines the power of Flask as the backend framework and React as the frontend library to provide a seamless and interactive user experience.
 
-Web Scraping with BeautifulSoup: The app extracts relevant passages from the collected articles using web scraping techniques with BeautifulSoup.
+<!-- Tech Stacks -->
+**Tech Stacks:**
+- **Backend:** Flask
+- **Frontend:** React
 
-Sentiment Analysis with VADER: The VADER (Valence Aware Dictionary and sEntiment Reasoner) NLP model is used to determine the sentiment associated with the extracted passages.
+**Features:**
+- **Sentiment Analysis:** Users can input news articles or product reviews to analyze their sentiment.
+- **Interactive Interface:** The dashboard offers a user-friendly and interactive interface for easy analysis.
+- **Real-time Updates:** Results are displayed in real-time, providing instant feedback to the user.
+- **Scalability:** The architecture of the application allows for easy scalability to accommodate a growing user base.
 
-Machine Learning Techniques: The app employs machine learning techniques such as part-of-speech tagging and named entity recognition for improved analysis.
+**Getting Started:**
+To use the Sentiment Analysis Dashboard, follow these steps:
+1. Clone the repository to your local machine.
+2. Install the necessary dependencies for both the backend and frontend.
+3. Start the Flask server.
+4. Launch the React frontend in your browser.
+5. Input news articles or product reviews for sentiment analysis.
 
+**Contributing:**
+Contributions to the project are welcome! If you have any ideas for improvements or would like to report any issues, please feel free to submit a pull request or open an issue on GitHub.
 
-
+**License:**
+This project is licensed under the [MIT License](link-to-license).
